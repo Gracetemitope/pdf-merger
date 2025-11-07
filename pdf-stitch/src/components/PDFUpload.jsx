@@ -472,7 +472,7 @@ function PDFUpload() {
           ref={fileInputRef}
           type="file"
           multiple
-          accept=".pdf,.doc,.docx,.jpeg,.jpg"
+          accept=".pdf,.doc,.docx,.jpeg,.jpg,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/jpeg"
           onChange={handleFileInputChange}
           className="hidden"
         />
