@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import HowItWorks from './pages/HowItWorks'
+import Privacy from './pages/Privacy'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -31,6 +32,8 @@ function App() {
   switch (currentPage) {
     case 'how-it-works':
       return <HowItWorks />
+    case 'privacy':
+      return <Privacy />
     case 'home':
     default:
       return <Home />

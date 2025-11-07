@@ -77,7 +77,20 @@ function Header() {
             >
               How it Works
             </a>
-            <a href="#" className="text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:underline transition-all">Privacy Policy</a>
+            <a 
+              href="#privacy" 
+              onClick={(e) => {
+                e.preventDefault()
+                if (window.navigateToPage) {
+                  window.navigateToPage('privacy')
+                } else {
+                  window.location.hash = 'privacy'
+                }
+              }}
+              className="text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:underline transition-all"
+            >
+              Privacy Policy
+            </a>
           </nav>
         </div>
       </div>
