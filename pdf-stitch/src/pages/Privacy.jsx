@@ -258,28 +258,13 @@ function Privacy() {
             </div>
           </section>
 
-          {/* Reassuring Note */}
-          <div className="bg-green-50 border border-green-200 rounded-xl p-8 sm:p-10 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-              <svg
-                className="w-8 h-8 text-green-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-green-900 mb-4">
-              Your Files Are Safe
+          {/* Call to Action */}
+          <section className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 sm:p-12 text-center text-white shadow-lg">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Ready to Get Started?
             </h2>
-            <p className="text-lg sm:text-xl text-green-800 mb-6 max-w-2xl mx-auto">
-              You can confidently use PDF Stitch to merge and convert your files. Whether you're working with sensitive documents, personal files, or confidential information, rest assured that your data never leaves your device.
+            <p className="text-lg sm:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              Start merging or converting your files right now. No sign-up required, no hassle.
             </p>
             <a
               href="#home"
@@ -291,11 +276,11 @@ function Privacy() {
                   window.location.hash = 'home'
                 }
               }}
-              className="inline-block px-8 py-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
+              className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
             >
               Start Using PDF Stitch
             </a>
-          </div>
+          </section>
 
           {/* Last Updated */}
           <div className="mt-12 text-center text-sm text-gray-500">
