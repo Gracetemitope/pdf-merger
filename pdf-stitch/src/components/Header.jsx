@@ -4,7 +4,18 @@ function Header() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <a
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault()
+              if (window.navigateToPage) {
+                window.navigateToPage('home')
+              } else {
+                window.location.hash = 'home'
+              }
+            }}
+            className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+          >
             <svg
               className="w-8 h-8"
               viewBox="0 0 24 24"
@@ -49,10 +60,23 @@ function Header() {
               />
             </svg>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">PDF Stitch</h1>
-          </div>
+          </a>
           {/* Navigation Links */}
           <nav className="flex items-center gap-3 sm:gap-6">
-            <a href="#" className="text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:underline transition-all">How it Works</a>
+            <a 
+              href="#how-it-works" 
+              onClick={(e) => {
+                e.preventDefault()
+                if (window.navigateToPage) {
+                  window.navigateToPage('how-it-works')
+                } else {
+                  window.location.hash = 'how-it-works'
+                }
+              }}
+              className="text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:underline transition-all"
+            >
+              How it Works
+            </a>
             <a href="#" className="text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:underline transition-all">Privacy Policy</a>
           </nav>
         </div>
